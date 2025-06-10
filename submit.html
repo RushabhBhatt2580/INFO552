@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit | Teen Creators Hub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Open Sans', sans-serif; margin: 0; background-color: #f8f9fa; color: #333; }
+    header { background-color: #5A4FCF; padding: 20px; text-align: center; color: white; font-family: 'Poppins', sans-serif; }
+    nav { background-color: #444; display: flex; justify-content: center; gap: 20px; padding: 10px; }
+    nav a { color: white; text-decoration: none; }
+    main { padding: 30px; text-align: center; }
+    form input, form textarea { width: 80%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    button { background-color: #5A4FCF; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; }
+    button:hover { background-color: #473db0; }
+    footer { background-color: #222; color: white; padding: 15px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+  <header><h1>Submit Your Work</h1><p>Share your creations with the Teen Creators community</p></header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="forum.html">Forum</a>
+    <a href="submit.html">Submit Work</a>
+    <a href="about.html">About</a>
+  </nav>
+  <main>
+    <form onsubmit="event.preventDefault(); alert('Your work has been submitted!');">
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <input type="url" placeholder="Link to Your Work (e.g. Drive, YouTube)" required><br>
+      <textarea placeholder="Short Description" rows="4" required></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>&copy; 2025 Teen Creators Hub</footer>
+</body>
+</html>
